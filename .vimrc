@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', {'do': 'GoInstallBinaries'}
 Plug 'fatih/molokai'
+Plug 'vim-crystal/vim-crystal'
 
 call plug#end()
 
@@ -15,6 +16,9 @@ set number
 set cindent
 
 autocmd Filetype python setlocal expandtab
+autocmd Filetype crystal setlocal expandtab
+autocmd Filetype crystal setlocal ts=2
+autocmd Filetype crystal setlocal sw=2
 
 " colorscheme
 let g:rehash256 = 1
