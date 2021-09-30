@@ -127,6 +127,8 @@ export GO_INIT_PATH=$HOME/go/src/github.com/henrikac
 
 # VSCodium
 # Shortcut for `codium <folder>`
-code() {
-	codium $1
-}
+if command -v codium > /dev/null; then
+  code() {
+    codium $1
+  }
+fi
