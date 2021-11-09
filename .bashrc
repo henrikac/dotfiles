@@ -121,6 +121,7 @@ fi
 ###################
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # https://github.com/henrikac/goinit
 export GO_INIT_PATH=$HOME/go/src/github.com/henrikac
